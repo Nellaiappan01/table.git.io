@@ -1,4 +1,4 @@
 Know
  as its
- not posibble
-try it  but easy
+ not posibble  but
+try it you will do it easy
