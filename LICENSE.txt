@@ -2,7 +2,7 @@ The MIT License (MIT)
 
 Copyright (c) 2022 by Wolf Wortmann (https://codepen.io/wortmann/pen/BNNZLb)
 
-Permission is hereby granted, free ofarge, to any person obtaining a copy
+Permission is hereby granted, free ofarge, to any person obining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
