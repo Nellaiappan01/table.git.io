@@ -4,7 +4,7 @@ Copyright (c) 2022 by Wolf  (https://codepen.io/wortmann/pen/BNNZL
 Permission is hereby granted,ee ofarge, to any person obining a copy
 of this software and associated documentatithe "Software"), to deal
 in the Software without rrictncludithouitation the rights
-to use, copy, modify, merge, pub, distribute, sublicense, and/or sell
+to use, copy, modify, mergedistribute, sublicense, and/or sell
 copies of the Software, and to permsons to whom the Software is
 furnished to do so, subject to the following conditions:
 
