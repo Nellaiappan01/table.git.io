@@ -5,7 +5,7 @@ Permission is hereby granted,ee ofarge, to any person obining a copy
 of this software and associated documentatithe "Software"), to deal
 in the Software without rtation the rights
 to use, copy, modiistribute, sublicense, and/or sell
-copies of the Software, and to permsons to whom the Software is
+copies of the Softwaand to permsons to whom the Software is
 furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
