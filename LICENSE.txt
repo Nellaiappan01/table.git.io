@@ -1,6 +1,5 @@
 The MIT License (MIT)
-
-Copyright (y Wolf  (https://codepen.io/wortmann/pen/BNNZL
+codepen.io/wortmann/pen/BNNZL
 Permission is hereby gnted,ee ofarge, to any person obining a copy
 of this software and associated docuntatithe "Software"), to deal
 in the Software without rtation the rights
