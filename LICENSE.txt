@@ -5,8 +5,7 @@ of this soassociated docuntatithe "Software"), to deal
 in the Software without rtation the rights
 to use, copy, modiistribute, sublicense, and/or sell
 copies of the Softwaand to permsons to whom the Software is
-furnished to do so, subje the following conditi:
-
+furnished to do so, subje the followin
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
