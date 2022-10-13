@@ -1,8 +1,4 @@
-The MIT License (MIT)
-codepen.io/wortmann/pen/BNNZL
-Permission is hereby gnted,ee ofarge, to any person obining a copy
-of this soassociated docuntatithe "
-to use, copy, modiistribute, sublicense, and/or sell
+, sublicense, and/or sell
 copies of the Softwaano permsons to whom the Software is
 furnished to do so, subje the followin
 The above copyright notice and this permission notice shall be included in all
