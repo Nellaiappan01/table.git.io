@@ -1,5 +1,5 @@
 Know
 New
-Word
+Wo
 It's called any 
 1fail 1st attempt s
