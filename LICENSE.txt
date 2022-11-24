@@ -1,2 +1,2 @@
 , sublicense, and/or sell
-cops o
+co
