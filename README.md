@@ -14,6 +14,6 @@ ryy
 ryyr
 rrgdgd
 higy
-ytuttj
-
+yt
+full
 tutt
