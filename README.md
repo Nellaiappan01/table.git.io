@@ -27,4 +27,5 @@ tkurg
 gdga
 yrte
 sag
-wwr r
+wwr rr
+rwrw
