@@ -19,7 +19,7 @@ full
 tutt
 ddd
 sdsfh
-gfdgdfg
+
 adfegthhh
 fdg
 hrgawa
