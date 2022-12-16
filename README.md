@@ -26,7 +26,7 @@ hrgawa
 tkurg
 gdga
 yrte
-sag
+
 wwr rr
 rwrw
 werer
