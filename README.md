@@ -12,8 +12,7 @@ njm,kttee
 ryy
 ryyr
 rrgdgd
-higy
-yt
+
 full
 tutt
 ddd
