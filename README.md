@@ -8,7 +8,7 @@ dfdf
 dffdf
 fdfdffd
 gbbgfbf
-njm,k
+njm
 ryy
 ryyr
 rrgdgd
