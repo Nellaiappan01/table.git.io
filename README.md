@@ -25,7 +25,7 @@ t
 gdga
 yrte
 jgjgf
-wwr rr
+wwr 
 rwrw
 werer
 erwe
