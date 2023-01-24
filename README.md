@@ -14,7 +14,7 @@ rrgdgd
 
 full
 tutt
-ddd
+d
 sdh
 hmhmh
 
