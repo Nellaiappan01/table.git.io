@@ -9,8 +9,7 @@ dffdf
 fdfd
 gbbgfbf
 njm
-ryy
-ryyr
+r
 rrgdgd
 
 full
