@@ -17,8 +17,7 @@ tutt
 ddd
 sdh
 hmhmh
-agt
-fdg
+
 
 t
 gdga
