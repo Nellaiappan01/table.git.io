@@ -10,7 +10,7 @@ fdfd
 gbbgfbf
 njm
 r
-rrgdgd
+rr
 
 full
 tutt
@@ -22,8 +22,7 @@ h
 t
 gdga
 yrte
-jgjgf
-wwr 
+jg
 rwrw
 werer
 erwe
@@ -31,8 +30,7 @@ erwe
 sh
 hghgfh
 dsfsdf
-dffg
-asdf
+df
 asdf
 fdssaddsa
 asdf
