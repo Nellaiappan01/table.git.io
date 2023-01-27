@@ -12,7 +12,7 @@ r
 rr
 
 full
-tutt
+t
 d
 sdh
 h
