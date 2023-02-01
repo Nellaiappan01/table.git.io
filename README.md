@@ -1,6 +1,5 @@
 Know
-New
-Wo
+N
 It's leany 
 1fail 1
  fail 2
