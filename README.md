@@ -19,7 +19,7 @@ h
 
 t
 gdga
-yrte
+y
 j
 rwrw
 werer
