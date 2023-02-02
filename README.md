@@ -10,7 +10,7 @@ gb
 
 rr
 
-full
+fu
 t
 d
 sdh
