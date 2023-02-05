@@ -1,7 +1,7 @@
 Know
 N
 It's leany 
-1fail 1
+1fai
  fail
 dfdf
 dffd
