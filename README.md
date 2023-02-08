@@ -18,8 +18,7 @@ h
 
 
 t
-gdga
-y
+g
 j
 rwrw
 werer
