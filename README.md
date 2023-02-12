@@ -3,8 +3,7 @@ N
 I
  fail
 dfdf
-df
-fdd
+dfd
 gb
 
 rr
