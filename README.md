@@ -1,7 +1,6 @@
 Know
 N
-It's leany 
-1fai
+I
  fail
 dfdf
 df
