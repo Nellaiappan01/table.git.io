@@ -1,6 +1,4 @@
-Know
-N
-
+I KNOW WHAT IT IS MY STATUS 
 
 
 
