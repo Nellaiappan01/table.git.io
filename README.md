@@ -27,17 +27,6 @@ hghgfh
 dsfsdf
 df
 asdf
-fdssad
-asdf
-fdsa
-trt
-eety
-;iiu
-
-d
-fds
-sgfh
-d
 asds
 d
 
