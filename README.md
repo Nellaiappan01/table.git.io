@@ -16,12 +16,6 @@ h
 
 
 t
-g
-j
-rwrw
-werer
-erwe
-
 sh
 hghgfh
 dsfsdf
