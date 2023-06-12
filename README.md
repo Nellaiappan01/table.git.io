@@ -6,14 +6,6 @@ dfdf
 dfd
 gb
 
-rr
-
-fu
-t
-d
-s
-h
-
 
 
 
