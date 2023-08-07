@@ -326,7 +326,7 @@ dropdownElement.addEventListener("change", function() {
         var num2 = parseFloat(num2Element.value);
 
         if (!isNaN(num1) && !isNaN(num2)) {
-            var sum = num1 - num2;
+            var sum = num2 - num1;
             resultElement.value = sum;
         } else {
             resultElement.value = "Invalid input";
