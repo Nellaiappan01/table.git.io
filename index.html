@@ -151,6 +151,14 @@ box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
     border: #1DA1F2 ;
 
 }
+.plusicon{
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    margin-top: 7%;
+    margin-left: 5%;
+    
+}
 .date{
 margin-top: -128%;
 margin-left: .4rem;
@@ -250,13 +258,23 @@ left: 0;
                 <option value="TN 69 AS 8778">Venugopal Earth Movers </option>
                 <option value="">Velliyammal Earth Movers </option>
               </select> 
+              <img src="plus.png" alt="plus.png" class="plusicon" id="plusheading" onclick="toggleElementsAndHide()">
+             <input id="addinput1" style="display: none;" placeholder="NEW CONTRACTOR" class="textBox" name="CONTRACTOR">
+
+
+                    <!-- hidden input  -->
               <input style="display: none;" name="CONTRACTOR" type="text" class="textBox">
 
               <input type="text" name="WORKINGAREA"placeholder="WORKINGAREA"/>
               <input type="TextArea" name="WORKDESCRIPTION"placeholder="WORKDESCRIPTION"/>
-              <input type="text" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="VECHILENO" id="outputTextbox" readonly/>
              
-             <div class="hrs"> <input type="number" step="any" id="num2" style="width: 120px; font-size: 10px; font-weight: bolder;  background-color: rgb(226, 234, 250);"   name="STARTINGHOURS"placeholder="START HOURS"/>
+             
+              <input type="text" id="outputTextbox" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="VECHILENO" readonly/>
+              <input type="text" id="outputbox" oninput="updatenewvechileno()" class="outputbox" style="display: none; color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="check"/>
+             
+             
+             
+              <div class="hrs"> <input type="number" step="any" id="num2" style="width: 120px; font-size: 10px; font-weight: bolder;  background-color: rgb(226, 234, 250);"   name="STARTINGHOURS"placeholder="START HOURS"/>
               <div class="clstm">  <input  type="number" step="any" id="num1" style="width: 120px; font-size: 10px;font-weight: bolder; background-color: rgb(250, 244, 226);  "name="CLOSINGHOURS"placeholder="CLOSE HOURS"/></div></div> 
               <input type="number" class="decimalInput" maxlength="5" style="width:50%; font-size: 12px;font-weight: bolder; margin-left:25%;  background-color: rgb(226, 250, 231); margin-top:4%; "id="result" readonly name="RUNNINGHOURS" placeholder="   RUN HOURS"/>
               <button name ="btn" value="Add" type="submit" onclick="add()" href="/">Submit</button>
@@ -265,6 +283,10 @@ left: 0;
             <a href="https://docs.google.com/spreadsheets/d/1bnyGTyb6Uno9H5pMJxnCtbJmIIGUfQwbB0dKQJ6pP-k/edit?usp=sharing">View GoogleSheet</a>
           </div></form>
         </body>
+
+
+
+
         <script type="text/javascript">
              // Get the dropdown list element using its Class
     var dropdownElement = document.querySelector(".myDropdown");
@@ -332,6 +354,33 @@ dropdownElement.addEventListener("change", function() {
             resultElement.value = "Invalid input";
         }
     }
+    var inputsVisible = false;
+
+function toggleElementsAndHide() {
+  var addinput1 = document.getElementById("addinput1");
+  var addinput2 = document.querySelector(".outputbox");
+  var heading = document.getElementById("plusheading");
+  var dropdown1 = document.getElementById("dropdown");
+  var vechileno = document.getElementById("outputTextbox");
+
+  if (!inputsVisible) {
+    addinput1.style.display = "block";
+    addinput2.style.display = "block";
+    addinputsVisible = true;
+
+    plusheading.style.display = "none";
+    dropdown.style.display = "none";
+    vechileno.style.display = "none";
+  }
+}
+function updatenewvechileno() {
+            // Get the value from input1
+            var outputbox = document.getElementById("outputbox").value;
+            
+            // Set the value of input2 to be the same as input1
+            document.getElementById("outputTextbox").value = outputbox;
+        }
+
 
         </script>
         </html>
