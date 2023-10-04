@@ -231,7 +231,7 @@ left: 0;
     opacity: 50%;
     display: none;
    } 
-   .hidebtn:active{
+   .hidebtn:active,#saveicon:active{
     opacity: 100%;
     border: 1px solid rgb(27, 157, 218);
     border-radius: 7px;
@@ -269,7 +269,7 @@ left: 0;
               <img src="plus.png" alt="plus.png" class="plusicon" id="plusheading" onclick="toggleElementsAndHide()">
             
               <div style=" position: relative;"> 
-              <input id="addinput1" style="display: none;" placeholder="NEW CONTRACTOR" class="textBox" name="CONTRACTOR">
+              <input id="addinput1" style="display: none;" placeholder="NEW CONTRACTOR" class="textBox" name="CONTRACTOR" required>
               <img onclick="refreshPage()" id="addButton" class="hidebtn" src="./save.svg" alt="" >
 
             </div>
@@ -315,6 +315,7 @@ left: 0;
               <input type="text" id="outputTextbox" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="VECHILENO" readonly/>
               <input type="text" id="outputbox" oninput="updatenewvechileno()" class="outputbox" style="display: none; color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="NEwVECHILENO"/>
               <img  id="toggleButton" src="./car.svg" alt="" style="width: 40px; height: 40px; position: absolute; margin-top: -19%; margin-left: 80%; opacity: 50%;">
+              <img  onclick="refreshPage()" id="saveicon" src="./save-file-5341.svg" alt="" style="display: none; width: 40px; height: 40px; position: absolute; margin-top: -19%; margin-left: 80%; opacity: 50%;">
               <input type="text"id="outputbox" class="outputbox" style=" display: none; color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" name="VECHILENO" style="display: none; color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="NEwVECHILENO">
             </div>
              
@@ -531,6 +532,7 @@ function updatenewvechileno() {
 const toggleButton = document.getElementById('toggleButton');
 const elementToToggle = document.getElementById('outputbox');
 const replaceinput = document.getElementById('outputTextbox');
+const saveicon = document.getElementById('saveicon');
 
 // Add a click event listener to the button
 toggleButton.addEventListener('click', function() {
@@ -539,6 +541,7 @@ toggleButton.addEventListener('click', function() {
         elementToToggle.style.display = 'block';
         toggleButton.style.display = 'none';
         replaceinput.style.display = 'none';
+        saveicon.style.display = 'block';
     } else {
         elementToToggle.style.display = 'none';
     }
