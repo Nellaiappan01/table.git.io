@@ -270,7 +270,7 @@ left: 0;
             
               <div style=" position: relative;"> 
               <input id="addinput1" style="display: none;" placeholder="NEW CONTRACTOR" class="textBox" name="CONTRACTOR">
-              <img id="addButton" class="hidebtn" src="./save.svg" alt="" >
+              <img onclick="refreshPage()" id="addButton" class="hidebtn" src="./save.svg" alt="" >
 
             </div>
              <!-- Button to add value to the dropdown -->
@@ -332,6 +332,11 @@ left: 0;
 
 
         <script type="text/javascript">
+             function refreshPage() {
+            // Reload the current page
+            window.location.reload();
+        }
+
              // Get the dropdown list element using its Class
     var dropdownElement = document.querySelector(".myDropdown");
 
