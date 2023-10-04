@@ -265,10 +265,21 @@ left: 0;
                     <!-- hidden input  -->
               <input style="display: none;" name="CONTRACTOR" type="text" class="textBox">
 
-              <input type="text" name="WORKINGAREA"placeholder="WORKINGAREA"/>
+              <select  id="dropdown" class="myDropdown1"   >
+                <option> </option>
+                <option value="">Salt Yard A & B </option>
+                <option value="">K block</option>
+                <option value="">O block</option>
+                <option value="">J block</option>
+                <option value="">I block</option>
+                <option value="">S block</option>
+                <option value="">Miscellanious</option>
+                <option value="">Reclamation</option>
+                </select>
+                <input id="addinput1" style="display: none;" placeholder="WORKINGAREA" class="textBox1" name="WORKINGAREA">
+                
               <input type="TextArea" name="WORKDESCRIPTION"placeholder="WORKDESCRIPTION"/>
-             
-             
+                
               <input type="text" id="outputTextbox" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="VECHILENO" readonly/>
               <input type="text" id="outputbox" oninput="updatenewvechileno()" class="outputbox" style="display: none; color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="VECHILENO"/>
              
@@ -303,6 +314,12 @@ dropdownElement.addEventListener("change", function() {
     textBoxElement.value = selectedLabel;
 });
 
+var dropdownElement1 = document.querySelector(".myDropdown1");
+var textBoxElement1 = document.querySelector(".textBox1");
+dropdownElement1.addEventListener("change", function() {
+    var selectedLabel1 = dropdownElement1.options[dropdownElement1.selectedIndex].text;
+    textBoxElement1.value = selectedLabel1;
+});
 
 
 
