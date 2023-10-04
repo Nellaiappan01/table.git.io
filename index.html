@@ -221,6 +221,22 @@ left: 0;
    justify-content: space-around;
    margin-top:-11%;
 }
+   .hidebtn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 200px;
+    z-index: 5;
+    opacity: 50%;
+    display: none;
+   } 
+   .hidebtn:active{
+    opacity: 100%;
+    border: 1px solid rgb(27, 157, 218);
+    border-radius: 7px;
+   }
+    
     </style>
 </head>
 <body>
@@ -251,9 +267,12 @@ left: 0;
               </select> 
             
               <img src="plus.png" alt="plus.png" class="plusicon" id="plusheading" onclick="toggleElementsAndHide()">
-             <input id="addinput1" style="display: none;" placeholder="NEW CONTRACTOR" class="textBox" name="CONTRACTOR">
+            
+              <div style=" position: relative;"> 
+              <input id="addinput1" style="display: none;" placeholder="NEW CONTRACTOR" class="textBox" name="CONTRACTOR">
+              <img id="addButton" class="hidebtn" src="./save.svg" alt="" >
 
-
+            </div>
              <!-- Button to add value to the dropdown -->
          
              <!-- Dropdown list -->
@@ -265,7 +284,7 @@ left: 0;
              <p id="updatedValue" style="display: none;"></p>
              <p id="selectedOption" style="display: none;"> Selected Option: </p>
              <ul id="savedValues" style="display: none;"></ul>
-             <img id="addButton" class="hidebtn" src="./save.svg" alt="" style="position: absolute; width:14%; height: 8%; margin-left:65%;margin-top: 3%; display:none;">
+
 
 
 
@@ -285,8 +304,7 @@ left: 0;
                 <option value="">Miscellanious</option>
                 <option value="">Reclamation</option>
                 </select>
-                <img id="deleteButton" src="./delete.svg" alt=""  style="width: 50px; height:50px; margin-left:20%; margin-top:5%; position: absolute;">
-                
+                <img id="deleteButton" src="./delete.svg" alt=""  style="width: 50px; height:50px; margin-left:20%; margin-top: 7%; position: absolute;">
 
             
             </div>
