@@ -221,22 +221,6 @@ left: 0;
    justify-content: space-around;
    margin-top:-11%;
 }
-   .hidebtn{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 200px;
-    z-index: 5;
-    opacity: 50%;
-    display: none;
-   } 
-   .hidebtn:active,#saveicon:active{
-    opacity: 100%;
-    border: 1px solid rgb(27, 157, 218);
-    border-radius: 7px;
-   }
-    
     </style>
 </head>
 <body>
@@ -263,36 +247,24 @@ left: 0;
               
               <select id="dropdown" class="myDropdown"   placeholder="CONTRACTOR">
                 
-               
+                <option> </option>
+                <option value="TN 59 AK 7071">Annai Earth Movers </option>
+                <option value="TN 29 AV 3884">Sri Sakthi Earth movers</option>
+                <option value="TN 69 T 7382">Kala Earth Movers </option>
+                <option value="TN 67 H 4498">Marvoor Arasi </option>
+                <option value="TN 28 AJ 9069">Sri Kumaran Earth Movers </option>
+                <option value="TN 69 BL 4084">Jeswanth Earth Movers </option>
+                <option value="TN 49 AM 1738">Sathuragiri Earth Movers </option>
+                <option value="TN 69 AS 8778">Venugopal Earth Movers </option>
+                <option value="">Velliyammal Earth Movers </option>
               </select> 
-            
               <img src="plus.png" alt="plus.png" class="plusicon" id="plusheading" onclick="toggleElementsAndHide()">
-            
-              <div style=" position: relative;"> 
-              <input id="addinput1" style="display: none;" placeholder="NEW CONTRACTOR" class="textBox" name="CONTRACTOR" required>
-              <img onclick="refreshPage()" id="addButton" class="hidebtn" src="./save.svg" alt="" >
-
-            </div>
-             <!-- Button to add value to the dropdown -->
-         
-             <!-- Dropdown list -->
-             <br>
-         
-             <!-- Button to delete the selected option -->
-             
-            
-             <p id="updatedValue" style="display: none;"></p>
-             <p id="selectedOption" style="display: none;"> Selected Option: </p>
-             <ul id="savedValues" style="display: none;"></ul>
-
-
-
-
+             <input id="addinput1" style="display: none;" placeholder="NEW CONTRACTOR" class="textBox" name="CONTRACTOR">
 
 
                     <!-- hidden input  -->
               <input style="display: none;" name="CONTRACTOR" type="text" class="textBox">
-              <div style="width: 100%; position: relative;">
+
               <select  id="dropdown" class="myDropdown1"   >
                 <option> </option>
                 <option value="">Salt Yard A & B </option>
@@ -304,20 +276,14 @@ left: 0;
                 <option value="">Miscellanious</option>
                 <option value="">Reclamation</option>
                 </select>
-                <img id="deleteButton" src="./delete.svg" alt=""  style="width: 50px; height:50px; margin-left:20%; margin-top: 7%; position: absolute;">
-
-            
-            </div>
                 <input id="addinput1" style="display: none;" placeholder="WORKINGAREA" class="textBox1" name="WORKINGAREA">
                 
               <input type="TextArea" name="WORKDESCRIPTION"placeholder="WORKDESCRIPTION"/>
-              <div style="position: relative;">
+                
               <input type="text" id="outputTextbox" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="VECHILENO" readonly/>
-              <input type="text" id="outputbox" oninput="updatenewvechileno()" class="outputbox" style="display: none; color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="NEwVECHILENO"/>
-              <img  id="toggleButton" src="./car.svg" alt="" style="width: 40px; height: 40px; position: absolute; margin-top: -19%; margin-left: 80%; opacity: 50%;">
-              <img  onclick="refreshPage()" id="saveicon" src="./save-file-5341.svg" alt="" style="display: none; width: 40px; height: 40px; position: absolute; margin-top: -19%; margin-left: 80%; opacity: 50%;">
-              <input type="text"id="outputbox" class="outputbox" style=" display: none; color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" name="VECHILENO" style="display: none; color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="NEwVECHILENO">
-            </div>
+              <input type="text" id="outputbox" oninput="updatenewvechileno()" class="outputbox" style="display: none; color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" name="VECHILENO" style="color: rgb(0, 110, 255); font-weight: bolder; font-size:16px;" placeholder="VECHILENO"/>
+             
+             
              
               <div class="hrs"> <input type="number" step="any" id="num2" style="width: 120px; font-size: 10px; font-weight: bolder;  background-color: rgb(226, 234, 250);"   name="STARTINGHOURS"placeholder="START HOURS"/>
               <div class="clstm">  <input  type="number" step="any" id="num1" style="width: 120px; font-size: 10px;font-weight: bolder; background-color: rgb(250, 244, 226);  "name="CLOSINGHOURS"placeholder="CLOSE HOURS"/></div></div> 
@@ -333,11 +299,6 @@ left: 0;
 
 
         <script type="text/javascript">
-             function refreshPage() {
-            // Reload the current page
-            window.location.reload();
-        }
-
              // Get the dropdown list element using its Class
     var dropdownElement = document.querySelector(".myDropdown");
 
@@ -418,21 +379,15 @@ function toggleElementsAndHide() {
   var heading = document.getElementById("plusheading");
   var dropdown1 = document.getElementById("dropdown");
   var vechileno = document.getElementById("outputTextbox");
-  var savebutton = document.querySelector(".hidebtn");
-  var deletebtn = document.getElementById("deleteButton");
 
   if (!inputsVisible) {
     addinput1.style.display = "block";
     addinput2.style.display = "block";
-    savebutton.style.display = "block";
-    deletebtn.style.display = "none";
     addinputsVisible = true;
 
     plusheading.style.display = "none";
     dropdown.style.display = "none";
     vechileno.style.display = "none";
-    savebutton.style.display = "block";
-   
   }
 }
 function updatenewvechileno() {
@@ -443,108 +398,6 @@ function updatenewvechileno() {
             document.getElementById("outputTextbox").value = outputbox;
         }
 
-        var inputField = document.getElementById('addinput1');
-        var addButton = document.getElementById('addButton');
-        var dropdownList = document.getElementById('dropdown');
-        var deleteButton = document.getElementById('deleteButton');
-        var selectedOption = document.getElementById('selectedOption');
-        var updatedValue = document.getElementById('updatedValue');
 
-        // Load saved values from Local Storage when the page loads
-        loadDropdownOptions();
-
-        // Function to load saved dropdown options from Local Storage
-        function loadDropdownOptions() {
-            var savedOptions = JSON.parse(localStorage.getItem('dropdownOptions')) || [];
-            savedOptions.forEach(function(option) {
-                // Split the saved option into name and value
-                var parts = option.split('|');
-                if (parts.length === 2) {
-                    var name = parts[0];
-                    var value = parts[1];
-                    addOptionToDropdown(name, value);
-                }
-            });
-        }
-
-        // Function to save the dropdown options to Local Storage
-        function saveDropdownOptions() {
-            var options = [];
-            for (var i = 0; i < dropdownList.options.length; i++) {
-                var name = dropdownList.options[i].text;
-                var value = dropdownList.options[i].value;
-                options.push(name + '|' + value);
-            }
-            localStorage.setItem('dropdownOptions', JSON.stringify(options));
-        }
-
-        // Function to add an option to the dropdown
-        function addOptionToDropdown(name, value) {
-            var option = document.createElement('option');
-            option.text = name;
-            option.value = value;
-            dropdownList.appendChild(option);
-        }
-
-        // Add an event listener to the button to add the input value to the dropdown
-        addButton.addEventListener('click', function() {
-            // Get the value entered in the input field
-            var inputValue = inputField.value;
-
-            // Add the new option to the dropdown list with the same name and value
-            addOptionToDropdown(inputValue, inputValue);
-
-            // Save the updated dropdown options to Local Storage
-            saveDropdownOptions();
-
-            // Clear the input field
-            inputField.value = '';
-        });
-
-        // Add an event listener to the delete button to remove the selected option
-        deleteButton.addEventListener('click', function() {
-            var selectedOptionIndex = dropdownList.selectedIndex;
-            if (selectedOptionIndex !== -1) {
-                dropdownList.remove(selectedOptionIndex);
-                selectedOption.textContent = "Selected Option: ";
-                updatedValue.textContent = '';
-                saveDropdownOptions(); // Save the updated dropdown options
-            }
-        });
-
-        // Add an event listener to the dropdown to display the selected option
-        dropdownList.addEventListener('change', function() {
-            var selectedOptionValue = dropdownList.value;
-            selectedOption.textContent = "Selected Option: " + selectedOptionValue;
-            updatedValue.textContent = 'Updated value: ' + selectedOptionValue;
-        });
-
-        // Add an event listener to update the selected option's value when the input field changes
-        var newOptionValue = document.getElementById('outputbox');
-        newOptionValue.addEventListener('input', function() {
-            var selectedOption = dropdownList.options[dropdownList.selectedIndex];
-            if (selectedOption) {
-                selectedOption.value = newOptionValue.value;
-                updatedValue.textContent = 'Updated value: ' + newOptionValue.value;
-                saveDropdownOptions();
-            }
-        });
-const toggleButton = document.getElementById('toggleButton');
-const elementToToggle = document.getElementById('outputbox');
-const replaceinput = document.getElementById('outputTextbox');
-const saveicon = document.getElementById('saveicon');
-
-// Add a click event listener to the button
-toggleButton.addEventListener('click', function() {
-    // Toggle the visibility of the element
-    if (elementToToggle.style.display === 'none' || elementToToggle.style.display === '') {
-        elementToToggle.style.display = 'block';
-        toggleButton.style.display = 'none';
-        replaceinput.style.display = 'none';
-        saveicon.style.display = 'block';
-    } else {
-        elementToToggle.style.display = 'none';
-    }
-});
         </script>
         </html>
